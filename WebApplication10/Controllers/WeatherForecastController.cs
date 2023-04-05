@@ -28,8 +28,8 @@ namespace WebApplication10.Controllers
             })
             .ToArray();
         }
-		
-		
+
+        int local = 0;
 		
 
         [HttpGet(Name = "GetWeatherForecast")]
