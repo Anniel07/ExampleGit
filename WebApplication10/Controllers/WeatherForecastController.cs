@@ -28,10 +28,7 @@ namespace WebApplication10.Controllers
             })
             .ToArray();
         }
-        int remote;
-	     int aa = 10;	
-         int bb = 90;
-         int cc = aa+bb;
+        
 	  
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
