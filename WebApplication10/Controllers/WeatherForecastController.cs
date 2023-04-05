@@ -30,7 +30,7 @@ namespace WebApplication10.Controllers
         }
 		
 		
-		
+	int a = 10;	
 
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
