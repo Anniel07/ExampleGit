@@ -17,6 +17,32 @@ namespace WebApplication10.Controllers
         {
             _logger = logger;
         }
+        [HttpGet(Name = "fromGitHub")]
+        public IEnumerable<WeatherForecast> fromGitHub()
+        {
+            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            {
+                Date = DateTime.Now.AddDays(index),
+                TemperatureC = Random.Shared.Next(-20, 55),
+                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+            })
+            .ToArray();
+        }
+		
+		
+		[HttpGet(Name = "fromGitHub1")]
+        public IEnumerable<WeatherForecast> fromGitHub1()
+        {
+            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            {
+                Date = DateTime.Now.AddDays(index),
+                TemperatureC = Random.Shared.Next(-20, 55),
+                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+            })
+            .ToArray();
+        }
+		
+		
 
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
@@ -56,6 +82,17 @@ namespace WebApplication10.Controllers
 
         [HttpGet(Name = "fromLocal2")]
         public IEnumerable<WeatherForecast> fromLocal2()
+        {
+            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            {
+                Date = DateTime.Now.AddDays(index),
+                TemperatureC = Random.Shared.Next(-20, 55),
+                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+            })
+            .ToArray();
+        }
+        [HttpGet(Name = "fromGitHub2")]
+        public IEnumerable<WeatherForecast> fromGitHub2()
         {
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
