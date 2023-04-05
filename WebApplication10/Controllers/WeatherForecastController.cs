@@ -28,7 +28,7 @@ namespace WebApplication10.Controllers
             })
             .ToArray();
         }
-	     int aa = 10;	
+	  int remote;
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
@@ -40,6 +40,7 @@ namespace WebApplication10.Controllers
             })
             .ToArray();
         }
+	/*
         [HttpGet(Name = "fromLocal")]
         public IEnumerable<WeatherForecast> fromLocal()
         {
@@ -51,7 +52,7 @@ namespace WebApplication10.Controllers
             })
             .ToArray();
         }
-
+	*/
 
         [HttpGet(Name = "fromLocal1")]
         public IEnumerable<WeatherForecast> fromLocal1()
