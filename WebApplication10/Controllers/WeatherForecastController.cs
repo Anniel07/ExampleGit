@@ -28,10 +28,7 @@ namespace WebApplication10.Controllers
             })
             .ToArray();
         }
-		
-		
-	int a = 10;	
-
+	     int aa = 10;	
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
