@@ -67,4 +67,5 @@ namespace WebApplication10.Controllers
             .ToArray();
         }
     }
+    int d=100;
 }
